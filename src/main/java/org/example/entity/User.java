@@ -28,6 +28,11 @@ public class User {
     @Column(name = "avatar_url")
     private String avatarUrl;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    private Set<String> tags;
+    @ManyToMany
+    @JoinTable(
+            name = "user_to_tag",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "tag_id")
+    )
+    private Set<Tag> tags;
 }

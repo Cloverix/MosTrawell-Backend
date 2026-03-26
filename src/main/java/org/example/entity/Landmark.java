@@ -22,6 +22,11 @@ public class Landmark {
     @Column(name = "desc")
     private String desc;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    private Set<String> tags;
+    @ManyToMany
+    @JoinTable(
+            name = "landmark_to_tag",
+            joinColumns = @JoinColumn(name = "landmark_id"),
+            inverseJoinColumns = @JoinColumn(name = "tag_id")
+    )
+    private Set<Tag> tags;
 }
