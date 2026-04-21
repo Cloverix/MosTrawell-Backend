@@ -3,6 +3,7 @@ package org.example.dto;
 import lombok.Data;
 
 import java.util.List;
+import java.util.Set;
 
 @Data
 public class UserDto {
@@ -10,5 +11,5 @@ public class UserDto {
     private String name;
     private int age;
     private String avatarUrl;
-    private List<String> tags;
+    private Set<String> tags;
 }
