@@ -16,28 +16,32 @@ import java.util.Set;
 public class UserController {
     private final UserService userService;
 
-    @GetMapping("/id={id}")
+    @GetMapping("/{id}")
     public ResponseEntity<UserDto> getById(@PathVariable Long id) {
         return ResponseEntity.ok(userService.getById(id));
     }
 
     @PostMapping("/register")
-    public ResponseEntity<UserDto> register(@RequestParam UserRegisterDto userRegisterDto) {
-        return ResponseEntity.ok(userService.register(userRegisterDto));
+    public ResponseEntity<UserDto> register(@RequestBody UserRegisterDto userRegisterDto) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(userService.register(userRegisterDto));
     }
 
-    @PatchMapping("/editName/{id}")
-    public ResponseEntity<UserDto> editName(@PathVariable Long id, @RequestParam String name) {
+    @PatchMapping("/editName")
+    public ResponseEntity<UserDto> editName(
+            @RequestParam(name = "id") Long id,
+            @RequestParam(name = "name") String name) {
         return ResponseEntity.ok(userService.editName(id, name));
     }
 
-    @PatchMapping("/editTags/{id}")
-    public ResponseEntity<UserDto> editTags(@PathVariable Long id, @RequestParam Set<String> tags) {
+    @PatchMapping("/editTags")
+    public ResponseEntity<UserDto> editTags(
+            @RequestParam(name = "id") Long id,
+            @RequestBody Set<String> tags) {
         return ResponseEntity.ok(userService.editTags(id, tags));
     }
 
-    @DeleteMapping("/id={id}")
-    public ResponseEntity<Void> delete(@PathVariable Long id) {
+    @DeleteMapping("/delete")
+    public ResponseEntity<Void> delete(@RequestParam(name = "id") Long id) {
         userService.delete(id);
         return ResponseEntity.noContent().build();
     }

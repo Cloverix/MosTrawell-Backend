@@ -15,23 +15,23 @@ import java.util.Set;
 public class LandmarkController {
     private final LandmarkService landmarkService;
 
-    @GetMapping("/id={id}")
+    @GetMapping("/{id}")
     public ResponseEntity<LandmarkDto> getById(@PathVariable Long id) {
         return ResponseEntity.ok(landmarkService.getById(id));
     }
 
-    @GetMapping("/name={name}")
-    public ResponseEntity<List<LandmarkDto>> getByName(@PathVariable String name) {
+    @GetMapping("/search/byName")
+    public ResponseEntity<List<LandmarkDto>> getByName(@RequestParam String name) {
         return ResponseEntity.ok(landmarkService.getByName(name));
     }
 
-    @GetMapping("/address={address}")
-    public ResponseEntity<List<LandmarkDto>> getByAddress(@PathVariable String address) {
+    @GetMapping("/search/byAddress")
+    public ResponseEntity<List<LandmarkDto>> getByAddress(@RequestParam String address) {
         return ResponseEntity.ok(landmarkService.getByAddress(address));
     }
 
-    @GetMapping("/byTags")
-    public ResponseEntity<List<LandmarkDto>> getByTags(@RequestParam Set<String> tagNames) {
+    @GetMapping("/search/byTags")
+    public ResponseEntity<List<LandmarkDto>> getByTags(@RequestBody Set<String> tagNames) {
         return ResponseEntity.ok(landmarkService.getByTags(tagNames));
     }
 }
