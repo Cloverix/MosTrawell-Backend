@@ -3,15 +3,19 @@ package org.example.service.impl;
 import lombok.RequiredArgsConstructor;
 import org.example.dto.UserDto;
 import org.example.dto.UserRegisterDto;
+import org.example.entity.Authority;
 import org.example.entity.Tag;
 import org.example.entity.User;
+import org.example.exception.AuthorityNotFoundException;
 import org.example.exception.TagNotFoundException;
 import org.example.exception.UserAlreadyExistsException;
 import org.example.exception.UserNotFoundException;
+import org.example.repository.AuthorityRepository;
 import org.example.repository.TagRepository;
 import org.example.repository.UserRepository;
 import org.example.service.UserService;
 import org.example.util.mapper.UserMapper;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +28,7 @@ import java.util.Set;
 public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
     private final TagRepository tagRepository;
+    private final AuthorityRepository authorityRepository;
     private final PasswordEncoder passwordEncoder;
 
     @Override
@@ -34,17 +39,35 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public UserDto getByName(String name) {
+        return userRepository.findByName(name)
+                .map(UserMapper::convertToDto)
+                .orElseThrow(() -> new UserNotFoundException("User not found"));
+    }
+
+    @Override
+    public UserDto getByLogin(String login) {
+        return userRepository.findByLogin(login)
+                .map(UserMapper::convertToDto)
+                .orElseThrow(() -> new UserNotFoundException("User not found"));
+    }
+
+    @Override
     public UserDto register(UserRegisterDto dto) {
         User user = new User();
 
-        if (userRepository.findByName(dto.getName()).isPresent()) {
-            throw new UserAlreadyExistsException("User with name " + dto.getName() + " already exists");
+        if (userRepository.findByLogin(dto.getLogin()).isPresent()) {
+            throw new UserAlreadyExistsException("User with login '" + dto.getLogin() + "' already exists");
         }
+
+        Authority authority = authorityRepository.findByAuthority("USER")
+                .orElseThrow(() -> new AuthorityNotFoundException("Authority not found"));
 
         user.setLogin(dto.getLogin());
         user.setPassword(passwordEncoder.encode(dto.getPassword()));
         user.setName(dto.getName());
         user.setAge(dto.getAge());
+        user.setAuthorities(Set.of(authority));
 
         return UserMapper.convertToDto(userRepository.save(user));
     }

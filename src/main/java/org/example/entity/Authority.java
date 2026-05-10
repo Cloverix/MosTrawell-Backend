@@ -3,37 +3,34 @@ package org.example.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.ToString;
+import org.springframework.security.core.GrantedAuthority;
 
 import java.util.Objects;
 import java.util.Set;
 
 @Data
 @Entity
-@Table(name = "tag")
-public class Tag {
+
+public class Authority implements GrantedAuthority {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "authority", nullable = false, unique = true)
+    private String authority;
+
     @ToString.Exclude
-    @ManyToMany(mappedBy = "tags")
+    @ManyToMany(mappedBy = "authorities")
     private Set<User> users;
-
-    @ToString.Exclude
-    @ManyToMany(mappedBy = "tags")
-    private Set<Landmark> landmarks;
-
-    @Column(name = "name", nullable = false, unique = true)
-    private String name;
 
 
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Tag)) return false;
-        Tag tag = (Tag) o;
-        return id.equals(tag.id);
+        if (!(o instanceof Authority)) return false;
+        Authority authority = (Authority) o;
+        return id.equals(authority.id);
     }
 
     @Override

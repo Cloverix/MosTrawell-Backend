@@ -2,6 +2,7 @@ package org.example.util.mapper;
 
 import lombok.experimental.UtilityClass;
 import org.example.dto.UserDto;
+import org.example.entity.Tag;
 import org.example.entity.User;
 
 import java.util.ArrayList;
@@ -15,12 +16,16 @@ public class UserMapper {
         UserDto dto = new UserDto();
         dto.setId(user.getId());
         dto.setName(user.getName());
+        dto.setLogin(user.getLogin());
         dto.setAge(user.getAge());
         dto.setAvatarUrl(user.getAvatarUrl());
         Set<String> tagSet = new HashSet<>();
-        user.getTags().forEach(tag -> {
-            tagSet.add(tag.getName());
-        });
+        Set<Tag> userTags = user.getTags();
+        if (userTags != null) {
+            userTags.forEach(tag -> {
+                    tagSet.add(tag.getName());
+                });
+        }
         dto.setTags(tagSet);
         return dto;
     }

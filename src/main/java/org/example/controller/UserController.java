@@ -6,6 +6,7 @@ import org.example.dto.UserRegisterDto;
 import org.example.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;
@@ -19,6 +20,16 @@ public class UserController {
     @GetMapping("/{id}")
     public ResponseEntity<UserDto> getById(@PathVariable Long id) {
         return ResponseEntity.ok(userService.getById(id));
+    }
+
+    @GetMapping("/login")
+    public ResponseEntity<UserDto> login(Authentication authentication) {
+        return ResponseEntity.ok(userService.getByLogin(authentication.getName()));
+    }
+
+    @GetMapping("/searchByLogin/{login}")
+    public ResponseEntity<UserDto> searchByLogin(@PathVariable String login) {
+        return ResponseEntity.ok(userService.getByLogin(login));
     }
 
     @PostMapping("/register")

@@ -2,7 +2,10 @@ package org.example.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.ToString;
 
+import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 
 @Data
@@ -22,6 +25,7 @@ public class Landmark {
     @Column(name = "desc")
     private String desc;
 
+    @ToString.Exclude
     @ManyToMany
     @JoinTable(
             name = "landmark_to_tag",
@@ -42,6 +46,6 @@ public class Landmark {
 
     @Override
     public int hashCode() {
-        return getClass().hashCode();
+        return Objects.hashCode(id);
     }
 }

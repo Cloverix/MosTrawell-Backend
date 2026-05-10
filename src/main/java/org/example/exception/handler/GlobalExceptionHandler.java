@@ -1,9 +1,6 @@
 package org.example.exception.handler;
 
-import org.example.exception.LandmarkNotFoundException;
-import org.example.exception.TagNotFoundException;
-import org.example.exception.UserAlreadyExistsException;
-import org.example.exception.UserNotFoundException;
+import org.example.exception.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -28,6 +25,11 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(TagNotFoundException.class)
     public ResponseEntity<String> tagNotFoundExceptionHandler(TagNotFoundException e) {
+        return new ResponseEntity<String>(e.getMessage(), HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(AuthorityNotFoundException.class)
+    public ResponseEntity<String> authorityNotFoundExceptionHandler(AuthorityNotFoundException e) {
         return new ResponseEntity<String>(e.getMessage(), HttpStatus.NOT_FOUND);
     }
 }

@@ -6,11 +6,12 @@ import org.example.service.LandmarkService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
 @RestController
-@RequestMapping("/api/landmarks")
+@RequestMapping("/api/landmark")
 @RequiredArgsConstructor
 public class LandmarkController {
     private final LandmarkService landmarkService;
@@ -31,7 +32,10 @@ public class LandmarkController {
     }
 
     @GetMapping("/search/byTags")
-    public ResponseEntity<List<LandmarkDto>> getByTags(@RequestBody Set<String> tagNames) {
+    public ResponseEntity<List<LandmarkDto>> getByTags(@RequestParam(required = false) Set<String> tagNames) {
+        if (tagNames == null || tagNames.isEmpty()) {
+            return ResponseEntity.ok(landmarkService.getByTags(Collections.emptySet()));
+        }
         return ResponseEntity.ok(landmarkService.getByTags(tagNames));
     }
 }
