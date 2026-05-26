@@ -1,3 +1,145 @@
 name;address;desc
-Московский кремль;Красная площадь;древнейшая крепость, исторический, политический и духовный центр России
-Винзавод;4 Сыромятнический пер., 1/8 строение 6;центр современного искусства
+Moscow Kremlin;Red Square, 1;Ancient fortress, the political and spiritual heart of Russia, UNESCO World Heritage site.
+Winzavod;4 Syromyatnichesky Lane, 1/8 building 6;Contemporary art center with galleries, exhibitions, and creative spaces.
+Tretyakov Gallery;10 Lavrushinsky Lane;World-famous museum of Russian fine art, from icons to avant-garde.
+Gorky Park;9 Krymsky Val;Main central park with sports facilities, cultural events, and modern art installations.
+Bolshoi Theatre;1 Theatre Square;Legendary opera and ballet theatre, symbol of Russian culture.
+VDNKh (Exhibition of Achievements of National Economy);119 Prospekt Mira;Giant exhibition complex with pavilions, fountains, and historical attractions.
+Moscow Zoo;1 Bolshaya Gruzinskaya Street;One of the largest zoos in Russia, home to over 8000 animals.
+Kolomenskoye Museum-Reserve;39 Prospekt Andropova;Former royal estate with UNESCO-listed Church of the Ascension and wooden palace.
+GUM Department Store;3 Red Square;Historic shopping arcade, luxury brands and Soviet-era charm.
+Arbat Street;Arbat Street;Famous pedestrian street with street musicians, souvenir shops, and cafes.
+Cathedral of Christ the Saviour;15 Volkhonka Street;Grand Russian Orthodox cathedral, rebuilt after demolition in Soviet era.
+Novodevichy Convent;1 Novodevichy Drive;16th-century convent, UNESCO site with beautiful cemetery and architecture.
+Moscow Planetarium;5 Sadovaya-Kudrinskaya Street;Modern planetarium with interactive exhibits and star shows.
+Moscow Metro (Komsomolskaya Station);Komsomolskaya Square;Stalinist architecture, chandeliers, mosaics – considered underground palaces.
+Sparrow Hills;Sparrow Hills;Popular viewpoint overlooking Luzhniki Stadium and the city skyline.
+Luzhniki Stadium;24 Luzhniki Street;Main Olympic stadium, home to Russian national football team.
+Muzeon Art Park;2 Krymsky Val;Open-air sculpture museum with Soviet-era monuments and contemporary art.
+Garage Museum of Contemporary Art;9/32 Krymsky Val;Leading contemporary art institution, housed in a Soviet modernist building.
+Pushkin State Museum of Fine Arts;12 Volkhonka Street;Extensive collection of European art, ancient casts, and masterpieces.
+Tsaritsyno Palace Complex;1 Dolskaya Street;18th-century palace and park, now a museum with fountains and greenhouses.
+Neskuchny Garden;14 Leninsky Prospekt;Oldest park in Moscow, part of Gorky Park, with historical grotto and alleys.
+Moscow International Business Center (Moscow-City);Presnenskaya Embankment;Skyscraper cluster with observation decks and modern architecture.
+Kremlin Armoury;Red Square, 1;Treasure museum exhibiting Fabergé eggs, royal carriages, and coronation dresses.
+Moscow Circus on Tsvetnoy Boulevard;13 Tsvetnoy Boulevard;Famous circus with acrobats, clowns, and animal performances.
+Apothecary Garden (Botanical Garden);26/1 Prospekt Mira;Oldest botanical garden in Russia, part of Moscow State University.
+Kuzminki Park;10 Kuzminsky Park;Large forest park with ponds, historical estate, and ecological trails.
+Moscow Cable Car at Sparrow Hills;Sparrow Hills;Aerial tramway connecting Luzhniki to Sparrow Hills, offers scenic city views.
+State Historical Museum;1 Red Square;Huge museum covering Russian history from ancient times to present.
+Central Children's Store on Lubyanka;2/1 Teatralny Proezd;Historic department store for children, with interactive museum and carousels.
+Krylya Sovetov (Soviet Wings) Stadium;47/3 Leningradsky Prospekt;Sports complex for football and athletics, also hosts events.
+Moscow Botanical Garden of RAS;4 Botanicheskaya Street;Large botanical garden with greenhouses, arboretum, and flower displays.
+Moscow Jewish Museum and Tolerance Center;11 Obraztsova Street;Modern museum about Jewish history, culture, and interactive exhibits.
+Victory Museum on Poklonnaya Hill;3 Brothers Fonchenko Street;Grand military museum with WWII dioramas, weapons, and outdoor tank exhibition.
+Moscow Art Theatre (MKHAT);3 Tverskoy Boulevard;Historic drama theatre founded by Stanislavsky and Nemirovich-Dan.
+Equestrian Club "Izmailovo";Izmailovsky Highway;Indoor and outdoor riding school, horse shows.
+Moscow State University Main Building;1 Leninskie Gory;Stalinist skyscraper, iconic university campus with observation deck.
+Fili Park;5/1 Bolshaya Filyovskaya Street;Family park with ponds, playgrounds, and sports grounds.
+Moscow Brewing Company "Badger";24 Bakuninskaya Street;Craft brewery with pub and brewery tours.
+Center for Electroacoustic Music;13/1 Bolshaya Nikitskaya Street;Experimental music studio, concerts of contemporary electronic music.
+Moscow International House of Music;52 Kosmodamianskaya Embankment;Concert hall with classical, jazz, and world music performances.
+Skazka Park (Amusement Park);14 Krylatskaya Street;Family amusement park with roller coasters, carousels, and themed zones.
+Moscow Oceanarium on Dmitrovskoye Shosse;10/1 Dmitrovskoye Shosse;Large aquarium with sea life, dolphin shows, and touch pools.
+Moscow Contemporary Art Center "M'Ars";11 Tverskaya Street;Exhibition space for avant-garde and contemporary artists.
+Moscow Islamic Mosque;7 Prospekt Mira;Main mosque of Moscow, built in Tatar style, open to visitors.
+Moscow Dance Center "TSEKH";15/1 Novodmitrovskaya Street;Modern dance school and performance space, workshops.
+Moscow Wine Festival (annual event);Various venues (check website);Wine tasting, master classes, and food pairing events.
+Moscow Handmade Market "Masterslavl";119 Prospekt Mira (inside VDNKh);Educational craft workshops for children and adults.
+Moscow Chat Club "Conversation";8 Neglinnaya Street;A place for language exchange and casual meetings in English/Russian.
+Moscow Shopping Mall "Aviapark";4 Khodynsky Boulevard;One of Europe's largest malls, with cinema, restaurants, and indoor park.
+Moscow Escape Room "Claustrophobia";12/1 Kuznetsky Most;Interactive puzzle rooms for team solving.
+Moscow Equestrian Complex "Bitsa";3 Balaklavsky Prospekt;Large horseback riding center, trails and competitions.
+Moscow Karting Center "Sky Karting";4/1 Khodynsky Boulevard;Indoor karting track for adrenaline seekers.
+Moscow Ice Palace "Krylatskoye";2 Krylatskaya Street;Indoor ice skating rink, training center for winter sports.
+Moscow Climbing Wall "Big Wall";51 Volgogradsky Prospekt;High climbing wall for sport climbing and training.
+Moscow Paintball Club "Polygon";15/2 Kaluzhskoye Shosse;Outdoor paintball field with scenarios.
+Moscow Beach Volleyball Center "BVC";6/3 Luzhniki Street;Professional beach volleyball courts, open for amateurs.
+Moscow Skatepark "Ramp 17";21/2 Nizhnyaya Krasnoselskaya Street;Concrete skatepark for rollerblades, skateboards, and BMX.
+Moscow Yoga Studio "Prana";18/2 Tverskaya Street;Daily yoga classes for all levels, meditation workshops.
+Moscow Handicraft Workshop "Clay City";5/1 Novinsky Boulevard;Pottery and ceramic classes, painting workshops.
+Moscow Handmade Market "Art-Kvartal";119 Prospekt Mira (VDNKh);Seasonal fair of handmade goods, craft workshops.
+Moscow Culinary Studio "Cook Lab";7/1 Pyatnitskaya Street;Cooking classes, masterclasses on international cuisine.
+Moscow Wine School "Enolog";12 Bolshaya Yakimanka Street;Wine tasting courses, sommelier training.
+Moscow Language Exchange "Polyglot Club";3/1 Tverskaya Street;Regular meetings for practicing foreign languages.
+Moscow Debate Club "Disput";10/1 Petrovka Street;Public debates and speech practice events.
+Moscow Book Club "Word";14/1 Pokrovka Street;Literary discussions, author meetings.
+Moscow Board Games Club "Igrovaya";8/2 Bolshaya Dmitrovka Street;Library of board games, tournaments, game nights.
+Moscow Nightclub "Propaganda";13 Bolotnaya Embankment;Famous nightclub with electronic music and thematic parties.
+Moscow Nightclub "Gipsy";6/2 Bolotnaya Embankment;Large nightclub, dance floor, occasional concerts.
+Moscow Jazz Club "Union of Composers";14/1 Bryusov Lane;Live jazz performances, cozy atmosphere.
+Moscow Rock Club "16 Tons";6/2 Presnenskaya Embankment;Legendary rock venue with live bands and beer.
+Moscow Classical Music Hall "Philharmonia-2";31/1 Tverskaya Street;Concerts of classical symphony and chamber music.
+Moscow Opera "Helikon-Opera";14/1 Bld. 1, Bolshaya Nikitskaya Street;Innovative opera productions in a historic building.
+Moscow Ballet School "La Pointe";10/1 Pokrovka Street;Professional ballet classes for adults and children.
+Moscow Street Art Museum "Artplay";10/1 Nizhnyaya Syromyatnicheskaya Street;Open-air museum of graffiti and street art.
+Moscow Gallery "Triumph";15/1 Ilyinka Street;Contemporary art gallery, exhibitions of young artists.
+Moscow Photo Center "Photoplay";12/1 Leningradsky Prospekt;Exhibitions of modern photography, workshops.
+Moscow Handmade Bead Shop "Bead Paradise";5/1 Novoslobodskaya Street;Shop and workshop for bead jewelry making.
+Moscow Knitting School "Stitch & Knit";3/1 Tverskaya Street;Knitting and crochet courses for all levels.
+Moscow Pottery Studio "Ceramic Place";8/2 Prechistenka Street;Pottery wheel classes, ceramics painting.
+Moscow Woodworking Workshop "Woodmaster";11/1 Dubininskaya Street;Furniture making classes, wood carving.
+Moscow Sewing School "Thread";14/2 Bolshaya Ordynka Street;Sewing and pattern cutting courses.
+Moscow Leather Craft Workshop "Leather Art";3/2 Taganskaya Street;Leather crafting and design courses.
+Moscow Jewelry Making School "Silver Line";5/1 Pyatnitskaya Street;Jewelry design, silver smithing classes.
+Moscow Perfume Workshop "Aroma Lab";7/1 Arbat Street;Create your own perfume, aroma workshops.
+Moscow Soap Making Studio "Soap Dream";9/2 Malaya Dmitrovka Street;Natural soap making classes for beginners.
+Moscow Candle Making Workshop "Candle Art";11/1 Sretenka Street;Candle crafting and decoration classes.
+Moscow Cookie Decorating Studio "Sweet Canvas";4/3 Bolshaya Polyanka Street;Cookie painting and icing techniques.
+Moscow Cake Baking School "Cake Lab";8/1 Maroseyka Street;Professional cake baking and decorating courses.
+Moscow Chocolate Workshop "Cacao Craft";12/2 Pokrovka Street;Chocolate truffle making, bean-to-bar classes.
+Moscow Coffee Roastery "Coffee Culture";15/1 Leninsky Prospekt;Coffee tasting, roasting demonstrations, brewing classes.
+Moscow Tea House "Chaikhana";4/1 Malaya Bronnaya Street;Tea ceremony, tea tasting events.
+Moscow Cheese Shop "Fromagerie";6/2 Pyatnitskaya Street;Cheese tasting, cheese making workshops.
+Moscow Farmer's Market "Danilovsky";74 Mytnaya Street;Fresh local produce, organic food, street food.
+Moscow Flea Market "Levsha";10/2 Volgogradsky Prospekt;Antique market, vintage goods, collectibles.
+Moscow Book Market "Biblio-Globus";1/1 Myasnitskaya Street;Huge bookstore, literary events, signings.
+Moscow Flower Market "Botanic";10/1 Prospekt Mira;Seasonal flower market, gardening workshops.
+Moscow Bike Rental "Velobike";Multiple locations (check website);City bike rental network, eco-friendly transport.
+Moscow Boat Rental "Boat Point";Krymskaya Embankment;Boat and catamaran rental on the Moskva River.
+Moscow Rollerblade Rental "Roler City";Gorky Park, 9 Krymsky Val;Rollerblade and inline skate rental, lessons.
+Moscow Segway Tour "Segway Moscow";Red Square area;Guided Segway tours around city landmarks.
+Moscow Helicopter Flight "Aerogid";Khodynskoye Pole, 3;Scenic helicopter tours over Moscow.
+Moscow Balloon Flight "Air Moscow";Various parks (check schedule);Hot air balloon flights over the city.
+Moscow Parachute Center "Sky Dive Moscow";42/1 Rublevskoye Shosse;Tandem skydiving training and jumps.
+Moscow Rock Climbing Gym "Rock Star";15/2 Prospekt Mira;Indoor rock climbing for all levels.
+Moscow Fitness Club "World Class";27/1 Tverskaya Street;Premium fitness center with pool and gym.
+Moscow Spa "Sanduny";14/7 Neglinnaya Street;Historic bathhouse, spa treatments, relaxation.
+Moscow Medical Spa "Laser Fix";10/1 Bolshaya Ordynka Street;Laser therapy and medical spa services.
+Moscow Wellness Center "Ayur Veda";8/2 Maroseyka Street;Ayurvedic treatments, yoga, meditation.
+Moscow Petting Zoo "Animals Park";119 Prospekt Mira (VDNKh);Children's petting zoo with domestic animals.
+Moscow Dinosaur Park "Jurassic Park";14/1 Krylatskaya Street;Life-size dinosaur models, interactive exhibits.
+Moscow Science Museum "Experimentanium";8/1 Butyrskaya Street;Interactive science museum for children.
+Moscow Robotic Center "Robo Park";5/1 Khodynsky Boulevard;Robot exhibitions, robot building workshops.
+Moscow Lego Center "Legoland";4/3 Leningradsky Prospekt;Lego construction play area, workshops.
+Moscow Children's Railroad "Kratovo";Kratovo village (outside Moscow);Miniature railway operated by children, educational.
+Moscow Aquapark "Kva-Kva Park";3/1 Golovinskoye Shosse;Indoor water park with slides and pools.
+Moscow Trampoline Park "Neo Jump";14/2 Volgogradsky Prospekt;Indoor trampoline arena for children and adults.
+Moscow Laser Tag Arena "Laser Force";5/1 Khodynsky Boulevard;Laser tag battles for teams.
+Moscow Bowling Club "Strike Zone";7/2 Leningradsky Prospekt;Bowling alleys, billiards, arcade.
+Moscow Virtual Reality Arena "VR Club";10/3 Tverskaya Street;VR games and simulations, multiplayer experiences.
+Moscow Boarding House "Chess & Cards";12/1 Pokrovka Street;Chess club, card game tournaments.
+Moscow Antique Shop "Old Times";3/2 Arbat Street;Fine antiques, vintage furniture, collectibles.
+Moscow Craft Beer Bar "Hop Head";11/1 Pyatnitskaya Street;Wide selection of local craft beers, pub food.
+Moscow Whiskey Bar "Whiskey Room";8/2 Bolshaya Dmitrovka Street;Single malt whiskies, cigar friendly.
+Moscow Cocktail Bar "Mixology Lab";15/1 Neglinnaya Street;Signature cocktails, molecular mixology.
+Moscow Wine Bar "Vino Grad";7/2 Maroseyka Street;European wines, cheese plates, live piano.
+Moscow Ramen Shop "Ramen House";10/1 Sretenka Street;Authentic Japanese ramen, sake.
+Moscow Burger Joint "Burger Bros";12/3 Bolshaya Polyanka Street;Gourmet burgers, milkshakes.
+Moscow Pizza Place "Pizza Napoli";5/1 Pokrovka Street;Wood-fired Neapolitan pizza, Italian wines.
+Moscow Sushi Restaurant "Sushi Master";14/2 Tverskaya Street;Fresh sushi and sashimi, Japanese cuisine.
+Moscow Georgian Cuisine "Khinkali House";8/1 Maroseyka Street;Traditional Georgian dumplings and cheese bread.
+Moscow Italian Trattoria "La Piazza";7/2 Tverskaya Street;Homemade pasta, Italian desserts, family atmosphere.
+Moscow Indian Restaurant "Taj Mahal";4/1 Bolshaya Polyanka Street;Authentic Indian curries, tandoori dishes.
+Moscow Chinese Restaurant "Panda";12/3 Pokrovka Street;Szechuan and Cantonese cuisine, dim sum.
+Moscow French Bistro "Le Mistral";10/2 Arbat Street;Classic French cuisine, escargots, crème brûlée.
+Moscow Spanish Tapas "El Patio";6/1 Maroseyka Street;Spanish tapas, paella, sangria.
+Moscow Mexican Cantina "La Fiesta";9/2 Pyatnitskaya Street;Tacos, burritos, tequila bar.
+Moscow Vegan Café "Green Life";5/3 Tverskaya Street;Plant-based dishes, raw desserts, smoothies.
+Moscow Organic Bistro "Eco Kitchen";8/4 Bolshaya Dmitrovka Street;Organic farm-to-table meals, gluten-free options.
+Moscow Street Food Market "Depot";1/1 Lesnaya Street;Indoor food hall with diverse cuisines and street food.
+Moscow Rooftop Bar "Sky Lounge";22/1 Presnenskaya Embankment;Panoramic city views, cocktails, evening parties.
+Moscow Jazz Bar "Riverside";3/2 Bersenevskaya Embankment;Live jazz, riverside terrace, chill atmosphere.
+Moscow Karaoke Club "Sing Loud";11/2 Tverskaya Street;Private karaoke rooms, party packages.
+Moscow Dance Club "Move";8/3 Neglinnaya Street;Latin and salsa dance nights, classes.
+Moscow Quiz Pub "Brainstorm";5/4 Bolshaya Polyanka Street;Pub quizzes, trivia nights, team games.

@@ -30,14 +30,14 @@ public class LandmarkServiceImpl implements LandmarkService {
 
     @Override
     public List<LandmarkDto> getByName(String name) {
-        return landmarkRepository.findAllByName(name).stream()
+        return landmarkRepository.findAllByNameContainingIgnoreCase(name).stream()
                 .map(LandmarkMapper::convertToDto)
                 .collect(Collectors.toList());
     }
 
     @Override
     public List<LandmarkDto> getByAddress(String address) {
-        return landmarkRepository.findAllByAddress(address).stream()
+        return landmarkRepository.findAllByAddressContainingIgnoreCase(address).stream()
                 .map(LandmarkMapper::convertToDto)
                 .collect(Collectors.toList());
     }

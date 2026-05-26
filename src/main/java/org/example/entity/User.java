@@ -32,7 +32,7 @@ public class User implements UserDetails {
     private String avatarUrl;
 
     @ToString.Exclude
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "users_to_tag",
             joinColumns = @JoinColumn(name = "user_id"),
@@ -66,6 +66,6 @@ public class User implements UserDetails {
 
     @Override
     public String getUsername() {
-        return name;
+        return login;
     }
 }
